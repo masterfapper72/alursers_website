@@ -1,0 +1,676 @@
+/* All resolutions structure */
+* {
+  margin: 0;
+  padding: 0;
+}
+  body.main-bg {
+    background-image: url("/static/public/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+.logo-container {
+  float: left;
+  position: relative;
+  left: 50;
+  top: 10;
+  z-index: 5;
+}
+.logo-container img {
+  width: 350px;
+  height: 180px;
+}
+.mob_nav {
+  display: none;
+}
+.mnav {
+  display: none;
+}
+
+/* Menu sliders */
+.menu_slider {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 1);
+  z-index: 5;
+}
+.menu_slider_layers {
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5;
+}
+.menu_animation_open {
+  animation: menu_open 0.5s forwards;
+}
+.menu_animation_close {
+  animation: menu_close 0.5s backwards;
+}
+@keyframes menu_open {
+  0% {width: 0%;}
+  100% {width: 60%;}
+}
+@keyframes menu_close {
+  0% {width: 60%;}
+  100% {width: 0%;}
+}
+.back_btn {
+  position: relative;
+  top: 1%;
+  left: -29%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn img {
+  width: 3%;
+  height: 3%;
+}
+.back_btn_rarity {
+  position: relative;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn_rarity img {
+  width: 3%;
+  height: 3%;
+}
+.back_btn_layers {
+  position: relative;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn_layers img {
+  width: 3%;
+  height: 3%;
+}
+
+/* Roadmap */
+.roadmap {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 80%;
+  top: 15%;
+  bottom: 0%;
+  left: -10%;
+  right: 0%;
+  z-index: 32;
+}
+.roadmap_al {
+  position: relative;
+  float: left;
+  top: 55%;
+  left: 2%;
+  width: 30%;
+  height: 40%;
+  z-index: 32;
+}
+.lite {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  left: 4%;
+  top: -20%;
+}
+.lite_link {
+  cursor: pointer;
+}
+.lite_link img {
+  width: 15%;
+  height: 5%;
+}
+
+/* LitePaper Layout */
+.paper {
+  display: none;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0%;
+  float: left;
+  z-index: 32;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+}
+.paper_container {
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.paper::-webkit-scrollbar {
+  display: none;
+}
+.doc_left {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 35%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_left img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.doc_right {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 38%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_right img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.doc_close {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_close img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Layers */
+.layer_container_one {
+
+  left: 11%;
+  right: 0%;
+  bottom: 2%;
+  padding-bottom: 2%;
+}
+.layer_container_two {
+
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_three {
+
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_four {
+  position: absolute;
+  top: 170%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_five {
+  position: absolute;
+  top: 240%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_six {
+  position: absolute;
+  top: 290%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_seven {
+  position: absolute;
+  top: 340%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_eight {
+  position: absolute;
+  top: 390%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_nine {
+  position: absolute;
+  top: 480%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_ten {
+  position: absolute;
+  top: 530%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_eleven {
+  position: absolute;
+  top: 560%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_twelve {
+  position: absolute;
+  top: 610%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_thirteen {
+  position: absolute;
+  top: 660%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_fourteen {
+  position: absolute;
+  top: 710%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_container_fifteen {
+  position: absolute;
+  top: 760%;
+  left: 11%;
+  right: 0%;
+  padding-bottom: 2%;
+}
+.layer_title {
+  position: relative;
+  width: 88%;
+  right: 0%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.layer_block_1 {
+  position: relative;
+  padding-top: 2%;
+}
+.layer_block_2 {
+  position: relative;
+}
+.layer_block_3 {
+  position: relative;
+}
+.layer_img_bg_1 {
+  position: relative;
+  float: left;
+  padding-top: 20px;
+}
+.layer_img_bg_1 img {
+  width: 9em;
+  height: 9em;
+  padding-left: 4em;
+}
+.layer_img_bg_2 {
+  position: relative;
+  float: left;
+  padding-top: 20px;
+}
+.layer_img_bg_2 img {
+  width: 9em;
+  height: 9em;
+  padding-left: 4em;
+}
+.layer_img_e_1 {
+  position: relative;
+  float: left;
+  padding-top: 20px;
+}
+.layer_img_e_1 img {
+  width: 15em;
+  height: 8em;
+  padding-left: 4em;
+}
+.prob {
+  position: relative;
+  padding-top: 5%;
+  left: 58%;
+  right: 0%;
+}
+.prob p {
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Section Layout */
+.base-layer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 300;
+}
+.page-container {
+  position: absolute;
+  z-index: 3;
+}
+.page-container img {
+  position: relative;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  margin-top: -4%;
+  margin-bottom: 0%;
+  left: 42%;
+  z-index: 3;
+}
+.title1 {
+  display: none;
+  position: absolute;
+  float: left;
+  left: 200;
+  top: 20;
+  color: #afdaff;
+  font-weight: bold;
+  text-shadow: 5px 0 0 black;
+  font-size: 55px;
+  font-family: 'Brush Script MT', cursive;
+  z-index: 1;
+}
+.title2 {
+  display: none;
+  position: absolute;
+  float: left;
+  left: 180;
+  top: 80;
+  color: #afdaff;
+  font-weight: bold;
+  text-shadow: 5px 0 0 black;
+  font-size: 55px;
+  font-family: 'Brush Script MT', cursive;
+  z-index: 1;
+}
+
+/* Slide show */
+.slide_body {
+  display: block;
+  position: relative;
+  float: right;
+  top: 15%;
+  left: 71%;
+  right: auto;
+  bottom: 0%;
+  z-index: 5;
+}
+.slide_img {
+  position: relative;
+  max-width: 25%;
+  width: 22%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid wheat;
+  z-index: 5;
+}
+.slideAnim {
+  animation: slide infinite;
+  animation-duration: 2s;
+}
+@keyframes slide {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* NFT Rarity Search Layout */
+.s-layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  text-align: center;
+}
+.finder {
+  padding-top: 15%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.tf {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 3px 0 0 black;
+  color: white;
+}
+.name_s {
+  padding-top: 7%;
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 2px 0 0 black;
+}
+input {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  width: 50%;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid black;
+  color: #111;
+  font-size: 15px;
+  box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+  height: 5%;    
+  font-family: 'Knewave', cursive;
+  letter-spacing: 2px;
+}
+.s_btn {
+  position: relative;
+  color: black;
+  background-color: #03b1fc;
+  border: 3px solid black;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.s_btn:hover {
+  background-color: #03e3fc;
+}
+.error-msg {
+  color: white;
+  font-size: 35px;
+  margin-top: 80px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  text-shadow: 2px 0 0 black;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+/* NavBar Layout */
+.navbar {
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 35;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 20;
+}
+a.anav {
+  /*color: white;*/
+  background: url(/static/public/menu_bg.jpg);
+  background-size:100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a.anav:hover {
+  color: gold;
+}
+
+/* Progress Bar Structure and Layouts */
+#prog-bar-cont {
+  opacity: 100%;
+  width: 75vw;
+  height: 2.5em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  box-shadow: 0 0 1px 0 rgba(#000, 0.75) inset, 0 0 4px 0 rgba(#000, 0.5);
+  text-align: left;
+  z-index: 5;
+}
+#prog-bar-cont-flow {
+  width: 75vw;
+  height: 2.5em;
+  position: relative;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  box-shadow: 0 0 1px 0 rgba(#000, 0.75) inset, 0 0 4px 0 rgba(#000, 0.5);
+  text-align: left;
+  z-index: 1;
+}
+.prog-common {
+  float: left;
+  height: 38px;
+  width: 33.33%;
+  padding-top: 2px;
+  font-size: 30px;
+  color: greenyellow;
+  text-shadow: 2px 0 0 black;
+  font-weight: bold;
+  text-align: center;
+  z-index: 5;
+}
+.prog-rare {
+  float: left;
+  height: 38px;
+  width: 33.33%;
+  padding-top: 2px;
+  font-size: 30px;
+  color: gold;
+  text-shadow: 2px 0 0 black;
+  font-weight: bold;
+  text-align: center;
+}
+.prog-legendary {
+  float: left;
+  height: 38px;
+  width: 32.99999%;
+  padding-top: 2px;
+  font-size: 30px;
+  color: purple;
+  text-shadow: 2px 0 0 black;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Progress Bar Animations */
+
+.progress-bar {	
+  height: 2.5em;
+	background-color: #ee303c;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+  z-index: 1;
+}
+.progress-striped .progress-bar { 	
+  background-color: #FCBC51; 
+  width: 33.33%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike 6s;
+}
+.progress-striped2 .progress-bar { 	
+  background-color: #FCBC51; 
+  width: 66.66%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike2 6s;
+}
+.progress-striped3 .progress-bar { 	
+  background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike3 6s;
+}
+@keyframes progressAnimationStrike {
+     from { width: 0 }
+     to   { width: 33.33% }
+}
+@keyframes progressAnimationStrike2 {
+  from { width: 0 }
+  to   { width: 66.66% }
+}
+@keyframes progressAnimationStrike3 {
+  from { width: 0 }
+  to   { width: 100% }
+}
+
+
+/* Details */
+
+.fa:hover {
+  color: black;
+} 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}

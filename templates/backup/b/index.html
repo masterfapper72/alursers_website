@@ -1,0 +1,738 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <link rel="icon" href="{{ url_for('static', filename='public/favicon.ico') }}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/particles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/pdf.min.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script> 
+    $(function(){
+      $("#includeEffects").load("{{ url_for('static', filename='particles/particles.html') }}"); 
+    });
+    </script>
+    <title>Alurser Sqaud</title>
+</head>
+<body class="main-bg">
+<div id="home"></div>
+<div class="logo-container">
+    <a><img src="{{ url_for('static', filename='public/logo.png') }}"></a>
+</div>
+<!-- Navigation section start -->
+<div class="navbar">
+    <a class="anav" onclick="menuLayersSlider()">RARITY</a>
+    <a class="anav" onclick="menuRoadSlider()">ROADMAP</a>
+    <a class="anav">FAQ</a>
+    <a class="anav fa fa-twitter" href="#"></a>
+    <a class="anav fa fa-telegram" href="#"></a>
+    <a class="anav fa fa-search" onclick="menuRaritySlider()"></a>
+</div>
+<div class="mob_nav">
+    <a class="mnav fa fa-twitter" href="#"></a>
+    <a class="mnav fa fa-telegram" href="#"></a>
+</div>
+<!-- Navigation section end -->
+<div class="page-container">
+    <img src="{{ url_for('static', filename='public/bg_body.png') }}"></div>
+<div class="base-layer">
+    <div id="tit">
+        <b class="title1">Welcome to the</b><br/>
+        <b class="title2">Alursers Universe</b>
+    </div>
+</div>
+<!-- Slide show start -->
+<div class="slide_body">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/1.png') }}">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/2.png') }}">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/3.png') }}">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/4.png') }}">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/5.png') }}">
+    <img id="slide" class="slide_img" src="{{ url_for('static', filename='public/6.png') }}">
+</div>
+<!-- Slide show end -->
+
+<!-- Slide page one start -->
+
+<div id="road" class="menu_slider">
+    <a class="back_btn" onclick="closeRoadSlider()"><img
+            src="{{ url_for('static', filename='public/right_arrow.png') }}"></a>
+    <img class="roadmap" src="{{ url_for('static', filename='public/roadmap.png') }}">
+    <img class="roadmap_al" src="{{ url_for('static', filename='public/roadmap_al.png') }}">
+    <a class="lite_link" onclick="openPaper()"><p class="lite">Read LitePaper &nbsp;<img
+            src="{{ url_for('static', filename='public/paper.png') }}"></p></a>
+</div>
+
+<div id="paper" class="paper">
+    <a id="go_pre" class="doc_left" onclick="pre()"><img
+            src="{{ url_for('static', filename='public/left_arrow.png') }}"></a>
+    <a id="go_next" class="doc_right" onclick="next()"><img
+            src="{{ url_for('static', filename='public/right_arrow.png') }}"></a>
+    <a class="doc_close" onclick="closePaper()"><img src="{{ url_for('static', filename='public/close.png') }}"></a>
+</div>
+
+<!-- Slide page one end -->
+
+<!-- Slide page two start -->
+
+<div id="rarity" class="menu_slider">
+    <a class="back_btn_rarity" onclick="closeRaritySlider()"><img
+            src="{{ url_for('static', filename='public/right_arrow.png') }}"></a>
+    <div id="ser" class="s-layer">
+        <div class="finder">
+            <b class="tf">Wanna know how rare your NFT is?</b></div>
+        <br/>
+        <form method="post" action="" class="name_s">
+            <label>Enter your NFT name</label><br/><br/><br/>
+            <input name="nft_name" placeholder="Name #N"><br/><br/>
+            <button type="submit" class="s_btn">Find!</button>
+        </form>
+    </div>
+</div>
+
+</div>
+
+<!-- Slide page two end -->
+
+<!-- Slide page three start -->
+
+<div id="layer" class="menu_slider_layers">
+    <a class="back_btn_layers" onclick="closeLayersSlider()"><img
+            src="{{ url_for('static', filename='public/right_arrow.png') }}"></a>
+
+    <div class="layer_container_one">
+
+        <div class="layer_title"><b>Body Common Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/blue_body_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/green_body_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/light_blue_body_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/orange_body_common.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/pink_body_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/purple_body_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/red_body_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Common/yellow_body_common.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_two">
+
+        <div class="layer_title"><b>Body Rare Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Rare/brain_body_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Rare/cereal_body_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Rare/cookie_body_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Rare/donut_body_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Rare/venom_body_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_three">
+
+        <div class="layer_title"><b>Body Legenday Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Legendary/diamond_body_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Legendary/galaxy_body_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Legendary/gold_fish_body_legendary.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Legendary/gold_nugget_body_legendary.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/body/Legendary/lightning_body_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+
+    <div class="layer_container_four">
+
+        <div class="layer_title"><b>Eyes Common Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/angry_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/confused_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/feel_sorry_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/jk_common.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/simple_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/sus_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/tired_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/what_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_3">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Common/you_kidding_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_five">
+
+        <div class="layer_title"><b>Eyes Rare Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Rare/alien_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Rare/butterfly_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Rare/cyclops_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Rare/double_pupil_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Rare/love_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="layer_container_six">
+
+        <div class="layer_title"><b>Eyes Legendary Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Legendary/cool_guy_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Legendary/galaxy_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Legendary/predator_legendary.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/eyes/Legendary/weird_glasses_legendary.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_seven">
+
+        <div class="layer_title"><b>Mouth Common Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/amused_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/evil_happy_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/happy_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/hungry_common.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/irritated_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Common/tongue_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="layer_container_eight">
+
+        <div class="layer_title"><b>Mouth Rare Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/bubblegum_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/drool_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/dumb_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/fangs_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/lolipop_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/monster_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/moustache_rare.png') }}">
+                    <div class="prob"><p>23%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/piercing_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_3">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/triple_tongue_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Rare/vampire_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_nine">
+
+        <div class="layer_title"><b>Mouth Legendary Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Legendary/c19_mask_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Legendary/cookie_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Legendary/double_tongue_legendary.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Legendary/hungry_monster_legendary.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/mouth/Legendary/rainbow_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="layer_container_ten">
+
+        <div class="layer_title"><b>Accessory Common Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Common/devil_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Common/gecko_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Common/halo_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_eleven">
+
+        <div class="layer_title"><b>Accessory Rare Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Rare/alursers_hat_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Rare/bra_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Rare/unicorn_headset_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/accessories/Rare/lolipops_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/accessories/Rare/pokeball_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_twelve">
+
+        <div class="layer_title"><b>Accessory Legendary Layers</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Legendary/bubbles_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Legendary/crown_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/head/Legendary/no_need_to_explain_legendary.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/accessories/Legendary/maracas_legendary.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/accessories/Legendary/pizza_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_e_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/accessories/Legendary/sword_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_thirteen">
+
+        <div class="layer_title"><b># Background Common Layers #</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/blue_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/green_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/light_green.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/orange_common.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/pink_common.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/purple_common.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Common/yellow_common.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_fourteen">
+
+        <div class="layer_title"><b># Background Rare Layers #</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/bubble_party_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/crazy_child_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/drug_lover_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/fancy_rare.png') }}">
+                    <div class="prob"><p>40%</p></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="layer_block_2">
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/feather_rare.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/high_rare.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_2">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Rare/matrix_rare.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layer_container_fifteen">
+
+        <div class="layer_title"><b># Background Legendary Layers #</b></div>
+
+        <div class="layer_block_1">
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Legendary/crystals_legendary.png') }}">
+                    <div class="prob"><p>10%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Legendary/full_moon_legendary.png') }}">
+                    <div class="prob"><p>20%</p></div>
+                </a>
+            </div>
+            <div class="layer_img_bg_1">
+                <a><img src="{{ url_for('static', filename='public/Bloob_Assets/background/Legendary/to_the_moon_legendary.png') }}">
+                    <div class="prob"><p>30%</p></div>
+                </a>
+            </div>
+        </div>
+
+    </div> -->
+
+</div> 
+
+<!-- Slide page three end -->
+
+<div id="includeEffects"></div>
+
+<script src="{{ url_for('static', filename='js/displaydoc.js') }}"></script>
+<script src="{{ url_for('static', filename='js/slider.js') }}"></script>
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,700 @@
+/* All resolutions structure */
+* {
+  margin: 0;
+  padding: 0;
+}
+.nft-calender-container {
+  position: absolute;
+  left: 1%;
+  display: inline-flex;
+  bottom: 0%;
+  z-index: 32;
+}
+.nft-calender-1 {
+  position: relative;
+  left: 1%;
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+}
+.nft-calender-2 {
+  position: relative;
+  left: 6%;
+}
+.nft-calender-3 {
+  position: relative;
+  left: 11%;
+  bottom: 20;
+}
+.nft-calender-3 img {
+  width: 150px;
+  height: 110px;
+}
+body.main-bg {
+  background-image: url("/static/public/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.logo-container {
+  float: left;
+  position: relative;
+  left: 50;
+  top: 30;
+  z-index: 5;
+}
+.logo-container-mobile {
+  display: none;
+}
+.logo-container img {
+  width: 260px;
+  height: 135px;
+}
+.rotate {
+  display: none;
+}
+
+/* Menu sliders */
+.menu_slider {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 1);
+  z-index: 5;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+}
+.menu_slider_road {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 1);
+  z-index: 5;
+}
+.menu_slider_layers {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5;
+}
+.menu_slider_rarity {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 43, 60, 0.8);
+  z-index: 5;
+}
+.menu_animation_open {
+  animation: menu_open 0.5s forwards;
+}
+.menu_animation_close {
+  animation: menu_close 0.5s backwards;
+}
+@keyframes menu_open {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes menu_close {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.back_btn {
+  position: relative;
+  top: 1%;
+  left: -39%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn img {
+  width: 3%;
+  height: 3%;
+}
+.back_btn_mobile {
+  display: none;
+}
+.back_btn_layers_mobile {
+  display: none;
+}
+.back_btn_rarity {
+  position: relative;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn_rarity img {
+  width: 3%;
+  height: 3%;
+}
+.back_btn_rarity_mobile {
+  display: none;
+}
+.back_faq_btn_mobile {
+  display: none;
+}
+.back_btn_layers {
+  position: fixed;
+  top: 1%;
+  left: 41%;
+  cursor: pointer;
+  z-index: 34;
+}
+.back_btn_layers img {
+  width: 1.7em;
+  height: 1.7em;
+}
+.back_btn_faq {
+  position: fixed;
+  top: 1%;
+  left: 41%;
+  cursor: pointer;
+  z-index: 50;
+}
+.back_btn_faq img {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+/* Roadmap */
+.roadmap {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 80%;
+  top: 15%;
+  bottom: 0%;
+  left: -10%;
+  right: 0%;
+  z-index: 32;
+}
+.roadmap_al {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 2%;
+  width: 40%;
+  height: 50%;
+  z-index: 32;
+}
+.lite {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  left: 4%;
+  top: -20%;
+}
+.lite_link {
+  cursor: pointer;
+}
+.lite_link img {
+  width: 15%;
+  height: 5%;
+}
+.lite_mob {
+  display: none;
+}
+.lite_link_mob {
+  display: none;
+}
+
+/* LitePaper Layout */
+.paper {
+  display: none;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0%;
+  float: left;
+  z-index: 32;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+}
+.paper_container {
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.paper::-webkit-scrollbar {
+  display: none;
+}
+.doc_left {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 35%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_left img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.doc_right {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 38%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_right img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.doc_close {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_close img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.doc_download {
+  float: left;
+  position: fixed;
+  top: 1%;
+  left: 32%;
+  cursor: pointer;
+  z-index: 34;
+}
+.doc_download img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Layers */
+.layer_container {
+  position: relative;
+  float: left;
+  top: 20%;
+  left: 1%;
+  right: 0%;
+  padding-bottom: 6%;
+}
+.layer_title {
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.layer_img_bg_1 {
+  position: relative;
+  float: left;
+  padding-top: 20px;
+}
+.layer_img_bg_1 img {
+  width: 9em;
+  height: 9em;
+  padding-left: 4em;
+}
+.layer_img_e_1 {
+  position: relative;
+  float: left;
+  padding-top: 20px;
+}
+.layer_img_e_1 img {
+  width: 12em;
+  height: 6em;
+  padding-left: 4em;
+}
+.prob {
+  position: relative;
+  padding-top: 5%;
+  left: 58%;
+  right: 0%;
+}
+.prob p {
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Section Layout */
+.base-layer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 300;
+}
+.page-container {
+  position: absolute;
+  z-index: 3;
+}
+.page-container img {
+  position: relative;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  margin-top: -4%;
+  margin-bottom: 0%;
+  left: 42%;
+  z-index: 3;
+}
+.title1 {
+  display: none;
+  position: absolute;
+  float: left;
+  left: 200;
+  top: 20;
+  color: #afdaff;
+  font-weight: bold;
+  text-shadow: 5px 0 0 black;
+  font-size: 55px;
+  font-family: "Brush Script MT", cursive;
+  z-index: 1;
+}
+.title2 {
+  display: none;
+  position: absolute;
+  float: left;
+  left: 180;
+  top: 80;
+  color: #afdaff;
+  font-weight: bold;
+  text-shadow: 5px 0 0 black;
+  font-size: 55px;
+  font-family: "Brush Script MT", cursive;
+  z-index: 1;
+}
+
+/* Slide show */
+.slide_body {
+  display: block;
+  position: relative;
+  float: right;
+  top: 15%;
+  left: 71%;
+  right: auto;
+  bottom: 0%;
+  z-index: 5;
+}
+.slide_img {
+  position: relative;
+  max-width: 25%;
+  width: 22%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid wheat;
+  z-index: 5;
+}
+.slideAnim {
+  animation: slide infinite;
+  animation-duration: 2s;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NFT Rarity Search Layout */
+.s-layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  text-align: center;
+}
+.finder {
+  padding-top: 15%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.tf {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 3px 0 0 black;
+  color: white;
+}
+.name_s {
+  padding-top: 4%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 0 0 black;
+}
+input {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  width: 50%;
+  padding: 15px;
+  background-color: white;
+  border: 4px solid black;
+  color: #111;
+  font-size: 15px;
+  height: 5%;
+  font-family: "Knewave", cursive;
+  letter-spacing: 2px;
+}
+.s_btn {
+  position: relative;
+  float: right;
+  top: 0%;
+  right: 22%;
+  color: black;
+  height: 5%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-image: url("/static/public/btn_bg.png");
+  background-size: 100%;
+  border: 3px solid black;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.s_btn:hover {
+  background-color: #03e3fc;
+}
+.error-msg {
+  color: white;
+  font-size: 35px;
+  margin-top: 80px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  text-shadow: 2px 0 0 black;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+/* Faq Layout */
+.faq-container {
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  top: 20%;
+  width: 80%;
+  color: white;
+  font-size: 2em;
+}
+.menu_slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* NavBar Layout */
+.navbar {
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 35;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 20;
+}
+a.anav {
+  /*color: white;*/
+  background: url(https://solana.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FsolanaGradient.5cbbf07c.png&w=3840&q=75);
+  background-size: 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a.anav:hover {
+  color: gold;
+}
+.mobile_menu_icon {
+  display: none;
+}
+.links {
+  display: none;
+}
+
+/* Progress Bar Structure and Layouts */
+.prog-body {
+  position: absolute;
+  top: 55%;
+  right: 0%;
+  left: 24%;
+  width: 45%;
+  height: 10%;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border: 3px solid black;
+  background: url(https://solana.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FsolanaGradient.5cbbf07c.png&w=3840&q=75);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 36;
+}
+.items {
+  position: relative;
+  top: 20%;
+}
+.grade {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  padding-bottom: 20%;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.animation-common {
+  animation: common-down 1s forwards;
+}
+.animation-uncommon {
+  animation: uncommon-down 1s forwards;
+}
+.animation-rare {
+  animation: rare-down 1s forwards;
+}
+.animation-epic {
+  animation: epic-down 1s forwards;
+}
+.animation-legendary {
+  animation: legendary-down 1s forwards;
+}
+.animation-mythic {
+  animation: mythic-down 1s forwards;
+}
+.animation-god {
+  animation: god-down 1s forwards;
+}
+@keyframes common-down {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 200%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+@keyframes uncommon-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -30%;
+  }
+}
+@keyframes rare-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -62%;
+  }
+}
+@keyframes epic-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -94%;
+  }
+}
+@keyframes legendary-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -126%;
+  }
+}
+@keyframes mythic-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -158%;
+  }
+}
+@keyframes god-down {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -190%;
+  }
+}
+
+/* Details */
+.fa:hover {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.social {
+  display: none;
+}
+.social_title {
+  display: none;
+}
+.mobile_menu_icon_open {
+  display: none;
+}
+.mobile_menu_icon_close {
+  display: none;
+}
+.mob_paper {
+  display: none;
+}

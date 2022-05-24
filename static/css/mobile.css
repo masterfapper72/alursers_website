@@ -1,0 +1,1808 @@
+/* Onr Plus 6 settings */
+@media only screen and (min-width: 392px) {
+  @media only screen and (max-width: 412px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    body.main-bg {
+      background-image: url("/static/public/background_smart.png");
+    }
+    .nft-calender-container {
+      display: none;
+    }
+    .logo-container-mobile {
+      float: left;
+      display: block;
+      position: relative;
+      left: 7%;
+      top: 10;
+      z-index: 5;
+    }
+    .logo-container-mobile img {
+      width: 320px;
+      height: 170px;
+    }
+    .logo-container {
+      display: none;
+    }
+
+    /* Menu sliders */
+    .menu_slider_road {
+      overflow-x: hidden !important;
+      overflow-y: scroll !important;
+    }
+    .menu_slider_layers {
+      display: none;
+      width: 100%;
+    }
+    .mobile_animation_open {
+      animation: mobile_slide_open 0.5s forwards;
+    }
+    .mobile_animation_close {
+      animation: mobile_slide_close 0.5s backwards;
+    }
+    @keyframes mobile_slide_open {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @keyframes mobile_slide_close {
+      0% {
+        width: 100%;
+      }
+      100% {
+        width: 0%;
+      }
+    }
+    .back_btn_mobile {
+      position: relative;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_mobile img {
+      width: 5%;
+      height: 5%;
+    }
+    .back_btn_layers_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_layers_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_faq_btn_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_faq_btn_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_btn {
+      display: none;
+    }
+    .back_btn_rarity {
+      display: none;
+    }
+    .back_btn_layers {
+      display: none;
+    }
+    .back_btn_faq {
+      display: none;
+    }
+
+    /* Roadmap */
+    .roadmap {
+      position: relative;
+      width: 100%;
+      height: 80%;
+      top: 30%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      z-index: 32;
+    }
+    .roadmap_al {
+      display: none;
+    }
+    .lite {
+      display: none;
+    }
+    .lite_link {
+      display: none;
+    }
+    .lite_mob {
+      position: absolute;
+      display: block;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      float: left;
+      left: 4%;
+      top: 20%;
+    }
+    .lite_link_mob {
+      display: block;
+    }
+    .lite_link_mob img {
+      width: 15%;
+      height: 7%;
+    }
+
+    /* LitePaper Layout */
+    .paper {
+      width: 100%;
+      z-index: 40;
+    }
+    .doc_left {
+      display: none;
+    }
+    .doc_right {
+      display: none;
+    }
+    .doc_download {
+      display: none;
+    }
+
+    /* Layers */
+    .layer_img_bg_1 {
+      left: 17%;
+    }
+    .layer_img_e_1 {
+      left: 11%;
+    }
+
+    /* Main Section Layout */
+    .base-layer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 300;
+    }
+    .page-container {
+      position: absolute;
+      z-index: 3;
+    }
+    .page-container img {
+      display: none;
+    }
+    .title1 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 200;
+      top: 20;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+    .title2 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 180;
+      top: 80;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+
+    /* Slide show */
+    .slide_body {
+      display: block;
+      position: relative;
+      left: 24%;
+      right: 0%;
+      top: 5%;
+      bottom: 0%;
+      z-index: 5;
+    }
+    .slide_img {
+      position: relative;
+      max-width: 100%;
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid wheat;
+      z-index: 5;
+    }
+    .slideAnim {
+      animation: slide infinite;
+      animation-duration: 2s;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* NFT Rarity Search Layout */
+    .s-layer {
+      display: none;
+    }
+
+    /* NavBar Layout */
+    .navbar {
+      display: none;
+    }
+    .mobile_menu_icon_open {
+      text-decoration: none;
+      float: right;
+      display: block;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .mobile_menu_icon_close {
+      text-decoration: none;
+      float: right;
+      display: none;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .links {
+      position: absolute;
+      display: none;
+      text-align: center;
+      top: 20%;
+      right: 0%;
+      width: 50%;
+      height: 35%;
+      background-color: rgb(235 222 193 / 85%);
+      border: 2px solid black;
+      z-index: 10;
+    }
+    .links a {
+      position: relative;
+      font-size: 2em;
+      top: 0%;
+      display: list-item;
+      padding-top: 1em;
+      list-style-type: none;
+    }
+    .mobile_menu_animation_open {
+      animation: mobile_menu_open 0.2s forwards;
+    }
+    @keyframes mobile_menu_open {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 35%;
+      }
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    .mob_paper {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      float: left;
+      z-index: 32;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: auto;
+    }
+    .social {
+      position: relative;
+      display: block;
+      float: left;
+      padding-right: 0.5em;
+      bottom: -35%;
+      left: 0%;
+      font-size: 2em;
+      color: wheat;
+    }
+    .social_title {
+      position: relative;
+      display: block;
+      float: left;
+      bottom: -30%;
+      left: 35%;
+      font-size: 1.5em;
+      color: wheat;
+    }
+  }
+}
+
+/* Iphone 12 Pro settings */
+@media only screen and (max-width: 391px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  body.main-bg {
+    background-image: url("/static/public/background_smart.png");
+  }
+  .nft-calender-container {
+    display: none;
+  }
+  .logo-container-mobile {
+    float: left;
+    display: block;
+    position: relative;
+    left: 7%;
+    top: 10;
+    z-index: 5;
+  }
+  .logo-container-mobile img {
+    width: 320px;
+    height: 170px;
+  }
+  .logo-container {
+    display: none;
+  }
+
+  /* Menu sliders */
+  .menu_slider_road {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+  }
+  .menu_slider_layers {
+    display: none;
+    width: 100%;
+  }
+  .mobile_animation_open {
+    animation: mobile_slide_open 0.5s forwards;
+  }
+  .mobile_animation_close {
+    animation: mobile_slide_close 0.5s backwards;
+  }
+  @keyframes mobile_slide_open {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes mobile_slide_close {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  .back_btn_mobile {
+    position: relative;
+    display: block;
+    top: 4%;
+    left: 4%;
+    cursor: pointer;
+    z-index: 34;
+  }
+  .back_btn_mobile img {
+    width: 5%;
+    height: 5%;
+  }
+  .back_btn_layers_mobile {
+    position: fixed;
+    display: block;
+    top: 4%;
+    left: 4%;
+    cursor: pointer;
+    z-index: 34;
+  }
+  .back_btn_layers_mobile img {
+    width: 1.7em;
+    height: 1.7em;
+  }
+  .back_faq_btn_mobile {
+    position: fixed;
+    display: block;
+    top: 4%;
+    left: 4%;
+    cursor: pointer;
+    z-index: 34;
+  }
+  .back_faq_btn_mobile img {
+    width: 1.7em;
+    height: 1.7em;
+  }
+  .back_btn {
+    display: none;
+  }
+  .back_btn_rarity {
+    display: none;
+  }
+  .back_btn_layers {
+    display: none;
+  }
+  .back_btn_faq {
+    display: none;
+  }
+
+  /* Roadmap */
+  .roadmap {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 30%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 32;
+  }
+  .roadmap_al {
+    display: none;
+  }
+  .lite {
+    display: none;
+  }
+  .lite_link {
+    display: none;
+  }
+  .lite_mob {
+    position: absolute;
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    left: 4%;
+    top: 20%;
+  }
+  .lite_link_mob {
+    display: block;
+  }
+  .lite_link_mob img {
+    width: 15%;
+    height: 7%;
+  }
+
+  /* LitePaper Layout */
+  .paper {
+    width: 100%;
+    z-index: 40;
+  }
+  .doc_left {
+    display: none;
+  }
+  .doc_right {
+    display: none;
+  }
+  .doc_download {
+    display: none;
+  }
+
+  /* Layers */
+  .layer_img_bg_1 {
+    left: 17%;
+  }
+  .layer_img_e_1 {
+    left: 11%;
+  }
+
+  /* Main Section Layout */
+  .base-layer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 300;
+  }
+  .page-container {
+    position: absolute;
+    z-index: 3;
+  }
+  .page-container img {
+    display: none;
+  }
+  .title1 {
+    display: none;
+    position: absolute;
+    float: left;
+    left: 200;
+    top: 20;
+    color: #afdaff;
+    font-weight: bold;
+    text-shadow: 5px 0 0 black;
+    font-size: 55px;
+    font-family: "Brush Script MT", cursive;
+    z-index: 1;
+  }
+  .title2 {
+    display: none;
+    position: absolute;
+    float: left;
+    left: 180;
+    top: 80;
+    color: #afdaff;
+    font-weight: bold;
+    text-shadow: 5px 0 0 black;
+    font-size: 55px;
+    font-family: "Brush Script MT", cursive;
+    z-index: 1;
+  }
+
+  /* Slide show */
+  .slide_body {
+    display: block;
+    position: relative;
+    left: 24%;
+    right: 0%;
+    top: 5%;
+    bottom: 0%;
+    z-index: 5;
+  }
+  .slide_img {
+    position: relative;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid wheat;
+    z-index: 5;
+  }
+  .slideAnim {
+    animation: slide infinite;
+    animation-duration: 2s;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* NFT Rarity Search Layout */
+  .s-layer {
+    display: none;
+  }
+
+  /* NavBar Layout */
+  .navbar {
+    display: none;
+  }
+  .mobile_menu_icon_open {
+    text-decoration: none;
+    float: right;
+    display: block;
+    color: wheat;
+    position: absolute;
+    font-size: 3em;
+    right: 4%;
+    top: 8%;
+    z-index: 34;
+  }
+  .mobile_menu_icon_close {
+    text-decoration: none;
+    float: right;
+    display: none;
+    color: wheat;
+    position: absolute;
+    font-size: 3em;
+    right: 4%;
+    top: 8%;
+    z-index: 34;
+  }
+  .links {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 20%;
+    right: 0%;
+    width: 55%;
+    height: 35%;
+    background-color: rgb(235 222 193 / 85%);
+    border: 2px solid black;
+    z-index: 10;
+  }
+  .links a {
+    position: relative;
+    font-size: 2em;
+    top: 0%;
+    display: list-item;
+    padding-top: 1em;
+    list-style-type: none;
+  }
+  .mobile_menu_animation_open {
+    animation: mobile_menu_open 0.2s forwards;
+  }
+  @keyframes mobile_menu_open {
+    0% {
+      height: 0%;
+    }
+    100% {
+      height: 35%;
+    }
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  .mob_paper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    float: left;
+    z-index: 32;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: auto;
+  }
+  .social {
+    position: relative;
+    display: block;
+    float: left;
+    padding-right: 0.5em;
+    bottom: -35%;
+    left: 3%;
+    font-size: 2em;
+    color: wheat;
+  }
+  .social_title {
+    position: relative;
+    display: block;
+    float: left;
+    bottom: -30%;
+    left: 35%;
+    font-size: 1.5em;
+    color: wheat;
+  }
+}
+
+/* Iphone X settings */
+@media only screen and (min-width: 413px) {
+  @media only screen and (max-width: 420px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    body.main-bg {
+      background-image: url("/static/public/background_smart.png");
+    }
+    .logo-container-mobile {
+      float: left;
+      display: block;
+      position: relative;
+      left: 7%;
+      top: 10;
+      z-index: 5;
+    }
+    .nft-calender-container {
+      display: none;
+    }
+    .logo-container-mobile img {
+      width: 320px;
+      height: 170px;
+    }
+    .logo-container {
+      display: none;
+    }
+
+    /* Menu sliders */
+    .menu_slider_road {
+      overflow-x: hidden !important;
+      overflow-y: scroll !important;
+    }
+    .menu_slider_layers {
+      display: none;
+      width: 100%;
+    }
+    .mobile_animation_open {
+      animation: mobile_slide_open 0.5s forwards;
+    }
+    .mobile_animation_close {
+      animation: mobile_slide_close 0.5s backwards;
+    }
+    @keyframes mobile_slide_open {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @keyframes mobile_slide_close {
+      0% {
+        width: 100%;
+      }
+      100% {
+        width: 0%;
+      }
+    }
+    .back_btn_mobile {
+      position: relative;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_mobile img {
+      width: 5%;
+      height: 5%;
+    }
+    .back_btn_layers_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_layers_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_faq_btn_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_faq_btn_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_btn {
+      display: none;
+    }
+    .back_btn_rarity {
+      display: none;
+    }
+    .back_btn_layers {
+      display: none;
+    }
+    .back_btn_faq {
+      display: none;
+    }
+
+    /* Roadmap */
+    .roadmap {
+      position: relative;
+      width: 100%;
+      height: 80%;
+      top: 30%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      z-index: 32;
+    }
+    .roadmap_al {
+      display: none;
+    }
+    .lite {
+      display: none;
+    }
+    .lite_link {
+      display: none;
+    }
+    .lite_mob {
+      position: absolute;
+      display: block;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      float: left;
+      left: 4%;
+      top: 20%;
+    }
+    .lite_link_mob {
+      display: block;
+    }
+    .lite_link_mob img {
+      width: 15%;
+      height: 7%;
+    }
+
+    /* LitePaper Layout */
+    .paper {
+      width: 100%;
+      z-index: 40;
+    }
+    .doc_left {
+      display: none;
+    }
+    .doc_right {
+      display: none;
+    }
+    .doc_download {
+      display: none;
+    }
+
+    /* Layers */
+    .layer_img_bg_1 {
+      left: 17%;
+    }
+    .layer_img_e_1 {
+      left: 11%;
+    }
+
+    /* Main Section Layout */
+    .base-layer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 300;
+    }
+    .page-container {
+      position: absolute;
+      z-index: 3;
+    }
+    .page-container img {
+      display: none;
+    }
+    .title1 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 200;
+      top: 20;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+    .title2 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 180;
+      top: 80;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+
+    /* Slide show */
+    .slide_body {
+      display: block;
+      position: relative;
+      left: 24%;
+      right: 0%;
+      top: 5%;
+      bottom: 0%;
+      z-index: 5;
+    }
+    .slide_img {
+      position: relative;
+      max-width: 100%;
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid wheat;
+      z-index: 5;
+    }
+    .slideAnim {
+      animation: slide infinite;
+      animation-duration: 2s;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* NFT Rarity Search Layout */
+    .s-layer {
+      display: none;
+    }
+
+    /* NavBar Layout */
+    .navbar {
+      display: none;
+    }
+    .mobile_menu_icon_open {
+      text-decoration: none;
+      float: right;
+      display: block;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .mobile_menu_icon_close {
+      text-decoration: none;
+      float: right;
+      display: none;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .links {
+      position: absolute;
+      display: none;
+      text-align: center;
+      top: 20%;
+      right: 0%;
+      width: 50%;
+      height: 35%;
+      background-color: rgb(235 222 193 / 85%);
+      border: 2px solid black;
+      z-index: 10;
+    }
+    .links a {
+      position: relative;
+      font-size: 2em;
+      top: 0%;
+      display: list-item;
+      padding-top: 1em;
+      list-style-type: none;
+    }
+    .mobile_menu_animation_open {
+      animation: mobile_menu_open 0.2s forwards;
+    }
+    @keyframes mobile_menu_open {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 35%;
+      }
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    .mob_paper {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      float: left;
+      z-index: 32;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: auto;
+    }
+    .social {
+      position: relative;
+      display: block;
+      float: left;
+      padding-right: 0.5em;
+      bottom: -35%;
+      left: 5%;
+      font-size: 2em;
+      color: wheat;
+    }
+    .social_title {
+      position: relative;
+      display: block;
+      float: left;
+      bottom: -30%;
+      left: 35%;
+      font-size: 1.5em;
+      color: wheat;
+    }
+  }
+}
+@media only screen and (min-width: 470px) {
+  @media only screen and (max-width: 900px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body.main-bg {
+      position: relative;
+      background-color: wheat;
+      background-image: none;
+    }
+    .logo-container {
+      display: none;
+    }
+    .rotate {
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 12%;
+      font-size: 2em;
+      font-weight: bold;
+      color: black;
+    }
+    #includeEffects {
+      display: none;
+    }
+    .nft-calender-container {
+      display: none;
+    }
+
+    /* Main Section Layout */
+    .base-layer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 300;
+    }
+    .page-container {
+      position: absolute;
+      z-index: 3;
+    }
+
+    /* Slide show */
+    .slide_body {
+      display: none;
+    }
+
+    /* NavBar Layout */
+    #open {
+      display: none;
+    }
+    #close {
+      display: none;
+    }
+    .navbar {
+      display: none;
+    }
+    .page-container img {
+      display: none;
+    }
+    .social {
+      display: none;
+    }
+    .social_title {
+      display: none;
+    }
+  }
+}
+
+/* Ipad Pro vertical settings */
+@media only screen and (min-width: 1020px) {
+  @media only screen and (max-width: 1030px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    body.main-bg {
+      background-image: url("/static/public/background_smart.png");
+    }
+    .logo-container-mobile {
+      float: left;
+      display: block;
+      position: relative;
+      left: 7%;
+      top: 10;
+      z-index: 5;
+    }
+    .nft-calender-container {
+      display: none;
+    }
+    .logo-container-mobile img {
+      width: 320px;
+      height: 170px;
+    }
+    .logo-container {
+      display: none;
+    }
+
+    /* Menu sliders */
+    .menu_slider_road {
+      overflow-x: hidden !important;
+      overflow-y: scroll !important;
+    }
+    .menu_slider_layers {
+      display: none;
+      width: 100%;
+    }
+    .mobile_animation_open {
+      animation: mobile_slide_open 0.5s forwards;
+    }
+    .mobile_animation_close {
+      animation: mobile_slide_close 0.5s backwards;
+    }
+    @keyframes mobile_slide_open {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @keyframes mobile_slide_close {
+      0% {
+        width: 100%;
+      }
+      100% {
+        width: 0%;
+      }
+    }
+    .back_btn_mobile {
+      position: relative;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_mobile img {
+      width: 5%;
+      height: 5%;
+    }
+    .back_btn_layers_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_layers_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_faq_btn_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_faq_btn_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_btn {
+      display: none;
+    }
+    .back_btn_rarity {
+      display: none;
+    }
+    .back_btn_layers {
+      display: none;
+    }
+    .back_btn_faq {
+      display: none;
+    }
+
+    /* Roadmap */
+    .roadmap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 30%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      z-index: 32;
+    }
+    .roadmap_al {
+      display: none;
+    }
+    .lite {
+      display: none;
+    }
+    .lite_link {
+      display: none;
+    }
+    .lite_mob {
+      position: absolute;
+      display: block;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      float: left;
+      left: 4%;
+      top: 20%;
+    }
+    .lite_link_mob {
+      display: block;
+    }
+    .lite_link_mob img {
+      width: 15%;
+      height: 7%;
+    }
+
+    /* LitePaper Layout */
+    .paper {
+      width: 100%;
+      z-index: 40;
+    }
+    .doc_left {
+      display: none;
+    }
+    .doc_right {
+      display: none;
+    }
+    .doc_download {
+      display: none;
+    }
+
+    /* Layers */
+    .layer_img_bg_1 {
+      left: 6%;
+    }
+    .layer_img_e_1 {
+      left: 0%;
+      margin-right: 8%;
+    }
+
+    /* Main Section Layout */
+    .base-layer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 300;
+    }
+    .page-container {
+      position: absolute;
+      z-index: 3;
+    }
+    .page-container img {
+      display: none;
+    }
+    .title1 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 200;
+      top: 20;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+    .title2 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 180;
+      top: 80;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+
+    /* Slide show */
+    .slide_body {
+      display: block;
+      position: relative;
+      left: 24%;
+      right: 0%;
+      top: 10%;
+      bottom: 0%;
+      z-index: 5;
+    }
+    .slide_img {
+      position: relative;
+      max-width: 100%;
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid wheat;
+      z-index: 5;
+    }
+    .slideAnim {
+      animation: slide infinite;
+      animation-duration: 2s;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* NFT Rarity Search Layout */
+    .s-layer {
+      display: none;
+    }
+
+    /* NavBar Layout */
+    .navbar {
+      display: none;
+    }
+    .mobile_menu_icon_open {
+      text-decoration: none;
+      float: right;
+      display: block;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .mobile_menu_icon_close {
+      text-decoration: none;
+      float: right;
+      display: none;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .links {
+      position: absolute;
+      display: none;
+      text-align: center;
+      top: 20%;
+      right: 0%;
+      width: 30%;
+      height: 35%;
+      background-color: rgb(235 222 193 / 85%);
+      border: 2px solid black;
+      z-index: 10;
+    }
+    .links a {
+      position: relative;
+      font-size: 2em;
+      top: 0%;
+      display: list-item;
+      padding-top: 1em;
+      list-style-type: none;
+    }
+    .mobile_menu_animation_open {
+      animation: mobile_menu_open 0.2s forwards;
+    }
+    @keyframes mobile_menu_open {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 35%;
+      }
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    .mob_paper {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      float: left;
+      z-index: 32;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: auto;
+    }
+    .social {
+      position: relative;
+      display: block;
+      float: left;
+      padding-right: 0.5em;
+      bottom: -35%;
+      left: 14%;
+      font-size: 3.5em;
+      color: black;
+    }
+    .social_title {
+      position: relative;
+      display: block;
+      float: left;
+      bottom: -30%;
+      left: 37%;
+      font-size: 3em;
+      color: black;
+    }
+  }
+}
+
+/* Ipad Pro horizzontal settings */
+/* All resolutions structure */
+@media only screen and (min-width: 1365px) {
+  @media only screen and (max-width: 1370px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+    body.main-bg {
+      background-image: url("/static/public/background_smart.png");
+    }
+    .nft-calender-container {
+      display: none;
+    }
+    .logo-container-mobile {
+      float: left;
+      display: block;
+      position: relative;
+      left: 7%;
+      top: 10;
+      z-index: 5;
+    }
+    .logo-container-mobile img {
+      width: 320px;
+      height: 170px;
+    }
+    .logo-container {
+      display: none;
+    }
+
+    /* Menu sliders */
+    .menu_slider_road {
+      overflow-x: hidden !important;
+      overflow-y: scroll !important;
+    }
+    .menu_slider_layers {
+      display: none;
+      width: 100%;
+    }
+    .mobile_animation_open {
+      animation: mobile_slide_open 0.5s forwards;
+    }
+    .mobile_animation_close {
+      animation: mobile_slide_close 0.5s backwards;
+    }
+    @keyframes mobile_slide_open {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    @keyframes mobile_slide_close {
+      0% {
+        width: 100%;
+      }
+      100% {
+        width: 0%;
+      }
+    }
+    .back_btn_mobile {
+      position: relative;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_mobile img {
+      width: 5%;
+      height: 5%;
+    }
+    .back_btn_layers_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_btn_layers_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_faq_btn_mobile {
+      position: fixed;
+      display: block;
+      top: 4%;
+      left: 4%;
+      cursor: pointer;
+      z-index: 34;
+    }
+    .back_faq_btn_mobile img {
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .back_btn {
+      display: none;
+    }
+    .back_btn_rarity {
+      display: none;
+    }
+    .back_btn_layers {
+      display: none;
+    }
+    .back_btn_faq {
+      display: none;
+    }
+
+    /* Roadmap */
+    .roadmap {
+      position: relative;
+      width: 100%;
+      height: 200%;
+      top: 30%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      z-index: 32;
+    }
+    .roadmap_al {
+      display: none;
+    }
+    .lite {
+      display: none;
+    }
+    .lite_link {
+      display: none;
+    }
+    .lite_mob {
+      position: absolute;
+      display: block;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      float: left;
+      left: 4%;
+      top: 20%;
+    }
+    .lite_link_mob {
+      display: block;
+    }
+    .lite_link_mob img {
+      width: 15%;
+      height: 7%;
+    }
+
+    /* LitePaper Layout */
+    .paper {
+      width: 100%;
+      z-index: 40;
+    }
+    .doc_left {
+      display: none;
+    }
+    .doc_right {
+      display: none;
+    }
+    .doc_download {
+      display: none;
+    }
+
+    /* Layers */
+    .layer_img_bg_1 {
+      left: 2%;
+    }
+    .layer_img_e_1 {
+      left: 0%;
+    }
+
+    /* Main Section Layout */
+    .base-layer {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 300;
+    }
+    .page-container {
+      position: absolute;
+      z-index: 3;
+    }
+    .page-container img {
+      display: none;
+    }
+    .title1 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 200;
+      top: 20;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+    .title2 {
+      display: none;
+      position: absolute;
+      float: left;
+      left: 180;
+      top: 80;
+      color: #afdaff;
+      font-weight: bold;
+      text-shadow: 5px 0 0 black;
+      font-size: 55px;
+      font-family: "Brush Script MT", cursive;
+      z-index: 1;
+    }
+
+    /* Slide show */
+    .slide_body {
+      display: block;
+      position: relative;
+      left: 35%;
+      right: 0%;
+      top: 10%;
+      bottom: 0%;
+      z-index: 5;
+    }
+    .slide_img {
+      position: relative;
+      max-width: 100%;
+      width: 30%;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid wheat;
+      z-index: 5;
+    }
+    .slideAnim {
+      animation: slide infinite;
+      animation-duration: 2s;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* NFT Rarity Search Layout */
+    .s-layer {
+      display: none;
+    }
+
+    /* NavBar Layout */
+    .navbar {
+      display: none;
+    }
+    .mobile_menu_icon_open {
+      text-decoration: none;
+      float: right;
+      display: block;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .mobile_menu_icon_close {
+      text-decoration: none;
+      float: right;
+      display: none;
+      color: wheat;
+      position: absolute;
+      font-size: 3em;
+      right: 4%;
+      top: 8%;
+      z-index: 34;
+    }
+    .links {
+      position: absolute;
+      display: none;
+      text-align: center;
+      top: 20%;
+      right: 0%;
+      width: 25%;
+      height: 35%;
+      background-color: rgb(235 222 193 / 85%);
+      border: 2px solid black;
+      z-index: 10;
+    }
+    .links a {
+      position: relative;
+      font-size: 2em;
+      top: 0%;
+      display: list-item;
+      padding-top: 1em;
+      list-style-type: none;
+    }
+    .mobile_menu_animation_open {
+      animation: mobile_menu_open 0.2s forwards;
+    }
+    @keyframes mobile_menu_open {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 35%;
+      }
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    .mob_paper {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      float: left;
+      z-index: 32;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      overflow: auto;
+    }
+    .social {
+      position: relative;
+      display: block;
+      float: left;
+      padding-right: 0.5em;
+      bottom: -28%;
+      left: 43.8%;
+      font-size: 2.5em;
+      color: wheat;
+    }
+    .social_title {
+      position: absolute;
+      display: block;
+      float: left;
+      top: 78%;
+      left: 40%;
+      font-size: 3em;
+      color: wheat;
+      text-shadow: 5px 0 0 black;
+    }
+  }
+}
